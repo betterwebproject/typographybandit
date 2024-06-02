@@ -1,3 +1,8 @@
+// CSS for smooth scrolling
+document.documentElement.style.scrollBehavior = 'smooth';
+
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+
 var scroll = function(e) {
   var width = window.innerWidth;
   if (width < 1024) return;
@@ -30,6 +35,20 @@ var touchMove = function(e) {
   e.preventDefault();
 };
 
-document.documentElement.addEventListener('wheel', scroll);
+// Using requestAnimationFrame for smoother scrolling
+var debounceScroll = function(fn) {
+  var frame;
+
+  return function(e) {
+    if (frame) {
+      cancelAnimationFrame(frame);
+    }
+    frame = requestAnimationFrame(function() {
+      fn(e);
+    });
+  };
+};
+
+document.documentElement.addEventListener('wheel', debounceScroll(scroll));
 document.documentElement.addEventListener('touchstart', touchStart);
-document.documentElement.addEventListener('touchmove', touchMove);
+document.documentElement.addEventListener('touchmove', debounceScroll(touchMove));
