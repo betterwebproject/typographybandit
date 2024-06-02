@@ -28,7 +28,6 @@ html a:hover {
 body {
     background-color: #222;
     margin: 0;
-    overflow: hidden;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -163,10 +162,6 @@ nav.links a.active {
 /*Mobile*/
 
 @media screen and (max-width: 1024px) {
-    body {
-        overflow: scroll;
-    }
-
     .page-inner {
         display: block;
     }
