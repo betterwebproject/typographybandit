@@ -1,40 +1,35 @@
-var startX;
-
-var handleTouchStart = function(event) {
-  startX = event.touches[0].clientX;
-}
-
-var handleTouchMove = function(event) {
-  if (!startX) {
-    return;
-  }
-
-  var x = event.touches[0].clientX;
-  var deltaX = startX - x;
-  startX = x;
-
-  this.scrollLeft += deltaX;
-  event.preventDefault();
-}
-
-var handleTouchEnd = function(event) {
-  startX = null;
-}
-
-var scroll = function( e ) {
+var scroll = function(e) {
   var width = window.innerWidth;
-  if(width <= 1024) return;
-      
-  e.preventDefault();
-  if ( Math.abs( e.deltaY ) >= Math.abs( e.deltaX ) ) {
-      this.scrollLeft += ( e.deltaY * 2 );
-  } else {
-      this.scrollLeft -= ( e.deltaX * 2 );
-  }
-}
+  if (width < 1024) return;
 
-document.documentElement.addEventListener('touchstart', handleTouchStart, { passive: true });
-document.documentElement.addEventListener('touchmove', handleTouchMove, { passive: false });
-document.documentElement.addEventListener('touchend', handleTouchEnd, { passive: true });
+  e.preventDefault();
+  if (Math.abs(e.deltaY) >= Math.abs(e.deltaX)) {
+    this.scrollLeft += (e.deltaY * 2);
+  } else {
+    this.scrollLeft -= (e.deltaX * 2);
+  }
+};
+
+var startX, scrollLeft;
+
+var touchStart = function(e) {
+  var width = window.innerWidth;
+  if (width < 1024) return;
+
+  startX = e.touches[0].pageX;
+  scrollLeft = this.scrollLeft;
+};
+
+var touchMove = function(e) {
+  var width = window.innerWidth;
+  if (width < 1024) return;
+
+  var x = e.touches[0].pageX;
+  var walk = (startX - x) * 2; //scroll-fast
+  this.scrollLeft = scrollLeft + walk;
+  e.preventDefault();
+};
 
 document.documentElement.addEventListener('wheel', scroll);
+document.documentElement.addEventListener('touchstart', touchStart);
+document.documentElement.addEventListener('touchmove', touchMove);
