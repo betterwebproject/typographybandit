@@ -40,7 +40,7 @@ function updateScroll() {
 
 function handleScroll(event) {
   if (isMobile) return;
-  currentPos += isVertical ? event.deltaY : (event.deltaY + event.deltaX);
+  currentPos += isVertical ? event.deltaY * 2 : (event.deltaY + event.deltaX) * 2;
   updateScroll();
   event.preventDefault();
 }
@@ -59,8 +59,8 @@ function handleTouchMove(event) {
   if (!isTouching) return;
   let currentTouchPos = isVertical ? event.touches[0].clientY : event.touches[0].clientX;
   let delta = startTouchPos - currentTouchPos;
-  currentPos = startPos + delta;
-  touchVelocity = lastTouchPos - currentTouchPos;
+  currentPos = startPos + delta * 2;
+  touchVelocity = (lastTouchPos - currentTouchPos) * 2;
   lastTouchPos = currentTouchPos;
   requestAnimationFrame(updateScroll);
   event.preventDefault();
@@ -92,5 +92,7 @@ document.addEventListener('touchstart', handleTouchStart, { passive: false });
 document.addEventListener('touchmove', handleTouchMove, { passive: false });
 document.addEventListener('touchend', handleTouchEnd, { passive: false });
 
-init();
-requestAnimationFrame(animate);
+window.onload = function() {
+  init();
+  requestAnimationFrame(animate);
+};
