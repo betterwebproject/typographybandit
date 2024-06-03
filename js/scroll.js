@@ -20,11 +20,13 @@ function init() {
     page.style.overflow = 'auto';
     page.style.transform = 'none';
     document.body.style.overflow = 'auto';
+    page.style['-webkit-overflow-scrolling'] = 'touch';
   } else {
     page.style.width = isVertical ? '100%' : `${totalSize}px`;
     page.style.height = isVertical ? `${totalSize}px` : '100%';
     page.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
+    page.style['-webkit-overflow-scrolling'] = 'auto';
     updateScroll();
   }
 }
