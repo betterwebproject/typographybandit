@@ -93,7 +93,16 @@ function handleVisibilityChange() {
   }
 }
 
+function handleOrientationChange() {
+  setTimeout(() => {
+    currentPos = 0;
+    init();
+    requestAnimationFrame(animate);
+  }, 500); // Delay to ensure layout is settled
+}
+
 window.addEventListener('resize', handleResize);
+window.addEventListener('orientationchange', handleOrientationChange);
 document.addEventListener('wheel', handleScroll, { passive: false });
 document.addEventListener('touchstart', handleTouchStart, { passive: false });
 document.addEventListener('touchmove', handleTouchMove, { passive: false });
