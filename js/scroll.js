@@ -86,11 +86,19 @@ function handleResize() {
   init();
 }
 
+function handleVisibilityChange() {
+  if (!document.hidden) {
+    init();
+    requestAnimationFrame(animate);
+  }
+}
+
 window.addEventListener('resize', handleResize);
 document.addEventListener('wheel', handleScroll, { passive: false });
 document.addEventListener('touchstart', handleTouchStart, { passive: false });
 document.addEventListener('touchmove', handleTouchMove, { passive: false });
 document.addEventListener('touchend', handleTouchEnd, { passive: false });
+document.addEventListener('visibilitychange', handleVisibilityChange);
 
 window.onload = function() {
   init();
