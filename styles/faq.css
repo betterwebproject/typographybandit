@@ -13,12 +13,12 @@
     overscroll-behavior: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
 }
 
 html {
     font-size: 16px;
     cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/smiley_point.svg'), auto;
-    scrollbar-width: none;
 }    
 
 html a:hover {
