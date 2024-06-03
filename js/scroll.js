@@ -7,10 +7,11 @@ let startTouchPos = 0;
 let startPos = 0;
 let touchVelocity = 0;
 let lastTouchPos = 0;
-let isMobile = /Mobi|Android/i.test(navigator.userAgent);
+let isMobile = /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 1024;
 
 function init() {
   isVertical = window.innerWidth < 1024;
+  isMobile = /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 1024;
   let totalSize = Array.from(items).reduce((acc, item) => acc + (isVertical ? item.offsetHeight : item.offsetWidth), 0);
 
   if (isMobile) {
@@ -18,7 +19,7 @@ function init() {
     page.style.height = '100%';
     page.style.overflow = 'auto';
     page.style.transform = 'none';
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'auto';
   } else {
     page.style.width = isVertical ? '100%' : `${totalSize}px`;
     page.style.height = isVertical ? `${totalSize}px` : '100%';
