@@ -31,7 +31,31 @@ body {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-}   
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+section {
+    padding: 6rem 1.5rem;
+}
+
+section:first-of-type {
+    padding-top: 10rem;
+}
+
+section:last-of-type {
+    padding-bottom: 10rem;
+}
+
+.text {
+    max-width: 40rem;
+    margin: 0 auto;
+}
 
 p,li {
     font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
@@ -109,30 +133,6 @@ nav p a:nth-child(2) {
 
 nav.links a.active {
     color: lightcyan;
-}
-
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-}
-
-section {
-    padding: 6rem 1.5rem;
-}
-
-section:first-of-type {
-    padding-top: 10rem;
-}
-
-section:last-of-type {
-    padding-bottom: 10rem;
-}
-
-.text {
-    max-width: 40rem;
-    margin: 0 auto;
 }
 
 hr {
