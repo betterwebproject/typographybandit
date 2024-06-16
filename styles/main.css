@@ -33,7 +33,7 @@ body {
     text-size-adjust: none;
 }
 
-.header {
+header {
 	position: fixed;
     display: flex;
     justify-content: center;
@@ -186,7 +186,7 @@ svg.arrow-right {
 
 /*------*/
 
-.footer {
+footer {
 	position: fixed;
     display: flex;
     justify-content: center;
@@ -202,7 +202,7 @@ svg.arrow-right {
     padding-right: clamp(1rem,3vw,1,5rem);
 }
 
-.footer p {
+footer p {
 	color:  lightgoldenrodyellow;
 }
 
