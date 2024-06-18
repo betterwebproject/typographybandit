@@ -198,8 +198,6 @@ footer {
 	text-align: center;
 	background-color: #222;
     border-top: 2px solid lightgoldenrodyellow;
-    padding-left: clamp(1rem,3vw,1.5rem);
-    padding-right: clamp(1rem,3vw,1,5rem);
 }
 
 footer p {
