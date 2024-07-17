@@ -34,18 +34,19 @@ body {
 }
 
 header {
-	position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 	top: 0;
 	left: 0;
+    z-index: 10000;
     width: 100%;
 	height: 4rem;
-    background-color: #222;
-    border-bottom: 2px solid lightgoldenrodyellow;
-    padding-left: clamp(1rem,3vw,1.5rem);
     padding-right: clamp(1rem,3vw,1,5rem);
+    padding-left: clamp(1rem,3vw,1.5rem);
+    border-bottom: 2px solid lightgoldenrodyellow;
+    background-color: #222;
 }
 
 nav a {
@@ -108,16 +109,16 @@ h1 {
 }
 
 h2 {
-font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
-font-size: clamp(1.031rem,2.5vw,1.063rem);
-font-weight: 400;
-line-height: 1.4;
-text-transform: uppercase;
-letter-spacing: 1px;
-display: inline-block;
-color: lightgreen;
-border-bottom: 2px solid;
-margin: 1rem 0 1rem;
+    font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
+    font-size: clamp(1.031rem,2.5vw,1.063rem);
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: lightgreen;
+    border-bottom: 2px solid;
+    margin: 1rem 0 1rem;
 }
 
 h2:nth-child(n+2) {
@@ -125,8 +126,8 @@ h2:nth-child(n+2) {
 }
 
 a {
-    text-decoration: none !important;
     color: inherit;
+    text-decoration: none !important;
 }
 
 ul {
@@ -140,9 +141,9 @@ li {
 
 hr {
     height: 2px;
-    background: lightgoldenrodyellow;
-    border: none;
     margin: 1rem 0;
+    border: none;
+    background: lightgoldenrodyellow;
 }
 
 /*Index*/
@@ -187,17 +188,17 @@ svg.arrow-right {
 /*------*/
 
 footer {
-	position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 4rem;
-	text-align: center;
-	background-color: #222;
     border-top: 2px solid lightgoldenrodyellow;
+    text-align: center;
+    background-color: #222;
 }
 
 footer p {

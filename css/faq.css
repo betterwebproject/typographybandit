@@ -35,19 +35,19 @@ body {
 }
 
 header {
-	position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 	top: 0;
 	left: 0;
+    z-index: 10000;
     width: 100%;
 	height: 4rem;
-    z-index: 10000;
-    background-color: #222;
-    border-bottom: 2px solid lightgoldenrodyellow;
-    padding-left: clamp(1rem,3vw,1.5rem);
     padding-right: clamp(1rem,3vw,1,5rem);
+    padding-left: clamp(1rem,3vw,1.5rem);
+    border-bottom: 2px solid lightgoldenrodyellow;
+    background-color: #222;
 }
 
 nav a {
@@ -76,27 +76,27 @@ nav a:hover {
 }
 
 .page-inner {
+    display: flex;
+    justify-content: start;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
-    display: flex;
-    justify-content: start;
 }
 
 .section {
+    display: flex;
     flex: none;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     width: 45%;
+    position: relative;
     min-height: 100vh; /*allows full height*/
     min-height: 100dvh;
     margin: auto 0; /*keeps content within viewport*/
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: 1px solid lightgoldenrodyellow;
+    background-color: #222;
 }
 
 .section:last-of-type {
@@ -142,17 +142,17 @@ a {
 }
 
 footer {
-	position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 4rem;
-	text-align: center;
-	background-color: #222;
     border-top: 2px solid lightgoldenrodyellow;
+    text-align: center;
+    background-color: #222;
 }
 
 footer p {
