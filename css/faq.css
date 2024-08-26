@@ -6,6 +6,14 @@
     font-display: optional;
 }
 
+:root {
+    --background-color: #222;
+    --primary-color: lightgoldenrodyellow;
+    --secondary-color: lightcyan;
+    --font:  'ABC Diatype', Arial, Helvetica, sans-serif;
+    --body-font-size: clamp(1.1rem,3vw,1.25rem);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +26,15 @@
 
 html {
     font-size: 16px;
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/smiley_point.svg'), auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/point.svg'), auto;
 }    
 
 html a:hover {
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/smiley_hover.svg'), auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg'), auto;
 }
 
 body {
-    background-color: #222;
+    background-color: var(--background-color);
     margin: 0;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -46,8 +54,8 @@ header {
 	height: 4rem;
     padding-right: clamp(1rem,3vw,1,5rem);
     padding-left: clamp(1rem,3vw,1.5rem);
-    border-bottom: 2px solid lightgoldenrodyellow;
-    background-color: #222;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color);
 }
 
 nav a {
@@ -55,7 +63,7 @@ nav a {
     font-size: clamp(1.1rem,3vw,1.25rem);
     font-weight: 400;
     line-height: 1.5; 
-    color: lightgoldenrodyellow;
+    color: var(--primary-color);
 }
 
 nav a:nth-child(2) {
@@ -64,7 +72,7 @@ nav a:nth-child(2) {
 
 nav a.active,
 nav a:hover {
-    color: lightcyan;
+    color: var(--secondary-color);
 }
 
 .page {
@@ -95,8 +103,8 @@ nav a:hover {
     min-height: 100vh; /*allows full height*/
     min-height: 100dvh;
     margin: auto 0; /*keeps content within viewport*/
-    border-right: 1px solid lightgoldenrodyellow;
-    background-color: #222;
+    border-right: 1px solid var(--primary-color);
+    background-color: var(--background-color);
 }
 
 .section:last-of-type {
@@ -119,26 +127,24 @@ nav a:hover {
 }   
 
 p {
-    font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
-    font-size: clamp(1.1rem,3vw,1.25rem);
-    font-weight: 400;
+    font-family: var(--font);
+    font-size: var(--body-font-size);
     line-height: 1.5; 
     margin: 0;
     color: lightcyan
 }
 
-h1 {
-    font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
-    font-size: clamp(1.6rem,4.25vw,1.8rem);
-    font-weight: 400;
-    line-height: 1.4;
-    color: lightgoldenrodyellow;
-    margin: 0 0 1rem 0;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-a {
-    text-decoration: none !important;
-    color: inherit;
+h1 {
+    font-family: var(--font);
+    font-size: clamp(1.6rem,4.25vw,1.8rem);
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
 }
 
 footer {
@@ -150,13 +156,13 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 4rem;
-    border-top: 2px solid lightgoldenrodyellow;
+    border-top: 2px solid var(--primary-color);
     text-align: center;
-    background-color: #222;
+    background-color: var(--background-color);
 }
 
 footer p {
-	color:  lightgoldenrodyellow;
+	color:  var(--primary-color);
 }
 
 /*Mobile*/
@@ -171,7 +177,7 @@ footer p {
         min-height: unset;
         padding: 4rem 1rem;
         border-right: none;
-        border-bottom: 1px solid lightgoldenrodyellow;
+        border-bottom: 1px solid var(--primary-color);
     }
 
     .section:first-child {
