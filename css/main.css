@@ -9,7 +9,7 @@
 :root {
     --background-color: #222;
     --primary-color: lightgoldenrodyellow;
-    --secondary-color: lightcyan;
+    --secondary-color: #e0ffff;
     --tertiary-color: lightpink;
     --quaternary-color: lightgreen;
     --font:  'ABC Diatype', Arial, Helvetica, sans-serif;
@@ -29,12 +29,13 @@
 
 html {
     font-size: 16px;
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/point.svg'), auto;
+    cursor: url('/assets/graphics/cursor.svg') 10.5 -14, auto;
 }    
 
 html a:hover {
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg'), auto;
+    cursor: url('/assets/graphics/cursor.svg') 10.5 -14,  auto;
 }
+
 
 body { 
     background: var(--background-color);
