@@ -64,7 +64,7 @@ header {
 
 nav a {
     font-family: var(--font);
-    font-size: clamp(1.1rem,3vw,1.25rem);
+    font-size: var(--body-font-size);
     font-weight: 400;
     line-height: 1.5; 
     color: var(--primary-color)
@@ -74,8 +74,7 @@ nav a:nth-child(2) {
     padding: 0 1.5rem;
 }
 
-nav a.active,
-nav a:hover {
+nav a.active {
     color: var(--secondary-color);
 }
 
@@ -114,8 +113,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover:not(nav a.active) {
     color: var(--primary-color);
+    text-decoration: underline wavy;
+    text-underline-offset: .4rem;
 }
 
 h1 {
