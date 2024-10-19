@@ -80,7 +80,7 @@ nav a.active {
 }
 
 nav a:hover:not(nav a.active) {
-    text-shadow: 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow;
+    text-shadow: 0 0 10px var(--tertiary-color), 0 0 15px var(--tertiary-color), 0 0 20px var(--tertiary-color);
 }
 
 .page {
