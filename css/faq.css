@@ -10,6 +10,7 @@
     --background-color: #222;
     --primary-color: lightgoldenrodyellow;
     --secondary-color: lightcyan;
+    --tertiary-color: lightpink;
     --font:  'ABC Diatype', Arial, Helvetica, sans-serif;
     --body-font-size: clamp(1.1rem,3vw,1.25rem);
 }
