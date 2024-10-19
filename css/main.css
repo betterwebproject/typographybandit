@@ -29,11 +29,11 @@
 
 html {
     font-size: 16px;
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/cursor.svg') 10.5 -14, auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg') 5 -5, auto;
 }    
 
 html a:hover {
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/cursor.svg') 10.5 -14,  auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg') 5 -5,  auto;
 }
 
 
@@ -79,9 +79,7 @@ nav a.active {
 }
 
 nav a:hover:not(nav a.active) {
-    text-decoration: underline wavy;
-    text-underline-offset: .3rem;
-    color: var(--secondary-color);
+    text-shadow: 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow;
 }
 
 .page {
@@ -121,9 +119,7 @@ a {
 }
 
 a:hover:not(nav a) {
-    text-decoration: underline wavy;
-    text-underline-offset: .3rem;
-    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--tertiary-color), 0 0 15px var(--tertiary-color), 0 0 20px var(--tertiary-color);
 }
 
 h1 {

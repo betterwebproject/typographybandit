@@ -26,11 +26,11 @@
 
 html {
     font-size: 16px;
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/cursor.svg') 10.5 -14, auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg') 5 -5, auto;
 }    
 
 html a:hover {
-    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/cursor.svg') 10.5 -14,  auto;
+    cursor: url('https://betterwebproject.github.io/typographybandit/assets/graphics/hover.svg') 5 -5,  auto;
 }
 
 body {
