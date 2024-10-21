@@ -80,4 +80,8 @@
         height: unset;
         padding: 0;
     }
+    
+    .hr-mobile {
+        display: none;
+    }
 }
