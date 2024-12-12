@@ -23,9 +23,9 @@
     align-items: center;
     width: 45%;
     position: relative;
-    min-height: 100vh; /*allows full height*/
+    min-height: 100vh; /* allows full height */
     min-height: 100dvh;
-    margin: auto 0; /*keeps content within viewport*/
+    margin: auto 0; /* keeps content within viewport */
     border-right: 1px solid var(--primary-color);
     background-color: var(--background-color);
 }
@@ -39,6 +39,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: fit-content;
     padding: 0 2.5rem; 
 }
 
@@ -74,6 +75,7 @@
 
     .section-inner {
         padding: 0;
+        max-width: unset;
     }
 
     .text {
