@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="dark only">
         <!-- no back slashes for GitHub Pages! -->
-        <link rel="preload" as="font" href="assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin=”anonymous”>
-        <title>About - Typography Bandit</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="preload" as="font" href="assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin>
+        <link rel="stylesheet" type="text/css" href="/global.css">
         <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
         <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
         <link rel="apple-touch-icon" href="assets/icons/apple_touch_icon.png">
         <link rel="manifest" href="manifest.json">
         <link rel="canonical" href="https://betterwebproject.github.io/typographybandit">
+        <title>About - Typography Bandit</title>
         <meta name="description" content="Making the web a safer place for type to live.">
         <meta name="thumbnail" content="https://betterwebproject.github.io/typographybandit/assets/graphics/share.webp">
         <meta property="og:site_name" content="Typography Bandit">
@@ -35,7 +35,7 @@
                     </svg>
                 </div>
                 <div class="button">
-                    <a href="/typographybandit/">Typography Bandit</a>
+                    <a href="/typographybandit/" class="active">Typography Bandit</a>
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                         <path fill="none" d="M325,18C228.7-8.3,118.5,8.3,78,21C22.4,38.4,4.6,54.6,5.6,77.6c1.4,32.4,52.2,54,142.6,63.7c66.2,7.1,212.2,7.5,273.5-8.3c64.4-16.6,104.3-57.6,33.8-98.2C386.7-4.9,179.4-1.4,126.3,20.7"/>
                     </svg>
@@ -75,7 +75,7 @@
                                 <li>Choose background and foreground (text) colors with high contrast. Use the WebAIM Contrast Checker (link below) to see if you’re in the ballpark.</li>
                                 <li>Use monospace fonts sparingly.</li>
                                 <li>Use no more than three, and preferrably two, typefaces on one website. It’s not just a question of aesthetics. Loading all those font files will slow down your website and generate more CO<sup>2</sup>.</li>
-                                <li>If you’ve got fast servers, and are using the @font-face CSS at-rule, consider using <span style="border-bottom: 2px solid;">font-display: optional</span>, instead of <span style="border-bottom: 2px solid;">font-display: swap</span>, to avoid FOIT (flash of invisible text) and FOUT (flash of unstyled text), and layout shifts. Just remember to preload your fonts in the head and to use a similar fallback font.</li>
+                                <li>If you’ve got fast servers, and are using the @font-face CSS at-rule, consider using “font-display: optional” instead of “font-display: swap” to avoid FOIT (flash of invisible text) and FOUT (flash of unstyled text), and layout shifts. Just remember to preload your fonts in the head and to use a similar fallback font.</li>
                             </ul>
                         </div>
                     </div>
@@ -188,8 +188,9 @@
 			</div>	
 		</main>
         <footer>
-            <img src="assets/graphics/logo.svg" height="30px" width="30px" alt="logo"><p style="padding-left: .5rem;">©24BWP</p>
+            <svg height="30px" width="30px" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"><circle cx="156.124" cy="156.124" r="156.124" style="fill:#fafad2" transform="scale(1.60129)"/><path d="M147.481 169.97c-10.656 26.208-18.144 51.552-18.144 69.12 0 25.632 15.264 37.152 44.352 37.44 26.784.288 57.6-9.792 85.248-42.048-7.2-5.472-13.824-12.384-29.664-28.224-11.808 16.128-23.616 28.224-37.728 28.224-6.624 0-9.792-3.168-9.792-10.08 0-9.504 4.32-25.056 17.28-54.72 33.984 0 65.088.288 75.168 1.152 3.456-13.824 8.928-28.512 13.536-42.048-10.08.864-38.592 1.152-70.56 1.152 4.896-10.368 10.944-21.888 16.992-34.848-18.72 3.456-36.576 4.608-54.72 4.608-4.608 9.504-9.792 19.872-14.688 30.24-24.192 0-43.776-.864-50.688-1.152-2.016 13.824-7.776 27.936-12.384 42.048 6.624-.288 24.192-.864 45.792-.864Z" style="fill:#222;fill-rule:nonzero" transform="matrix(1.34305 0 0 1.36708 -11.51 -4.022)"/>
+            </svg>
+            <p style="padding-left: .5rem">©25BWP</p>
         </footer>
-        <script src="js/linkstyling.js" defer></script>
 	</body>
 </html>

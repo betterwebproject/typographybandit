@@ -5,14 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="dark only">
-        <title>FAQ - Typography Bandit</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/faq.css">
+        <link rel="stylesheet" type="text/css" href="/global.css">
         <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
         <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
         <link rel="apple-touch-icon" href="assets/icons/apple_touch_icon.png">
         <link rel="manifest" href="manifest.json">
         <link rel="canonical" href="https://betterwebproject.github.io/typographybandit/faq">
+        <title>FAQ - Typography Bandit</title>
         <meta name="description" content="Frequently Asked Questions">
         <meta name="thumbnail" content="https://betterwebproject.github.io/typographybandit/assets/graphics/share.webp">
         <meta property="og:site_name" content="Typography Bandit">
@@ -23,12 +22,13 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
+        <style>.page{position:absolute;top:0;left:0;min-width:100%;height:100%}.page-inner{display:flex;justify-content:start;position:absolute;top:0;left:0;width:100vw;height:100%}.section{display:flex;flex:none;justify-content:center;align-items:center;width:45%;position:relative;min-height:100vh;min-height:100dvh;margin:auto 0;border-right:1px solid var(--primary-color);background-color:var(--background-color)}.section:last-of-type{border:none}.section-inner{display:flex;justify-content:center;align-items:center;width:100%;max-width:fit-content;padding:0 2.5rem}.text{width:100%;max-width:40rem;height:120px;margin:0 auto}h1{text-align:left}@media screen and (max-width:1024px){.page-inner{display:block}.section{width:100%;min-height:unset;padding:4rem 1rem;border-right:none;border-bottom:1px solid var(--primary-color)}.section:first-child{padding-top:8rem}.section:last-child{padding-bottom:8rem}.section-inner{padding:0;max-width:unset}.text{height:unset;padding:0}.hr-mobile{display:none}}</style>
     </head>
     <body>
         <header>
             <nav class="links">
                 <div class="button">
-                    <a href="/typographybandit/faq">FAQ</a>
+                    <a href="/typographybandit/faq" class="active" >FAQ</a>
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                         <path fill="none" d="M325,18C228.7-8.3,118.5,8.3,78,21C22.4,38.4,4.6,54.6,5.6,77.6c1.4,32.4,52.2,54,142.6,63.7c66.2,7.1,212.2,7.5,273.5-8.3c64.4-16.6,104.3-57.6,33.8-98.2C386.7-4.9,179.4-1.4,126.3,20.7"/>
                     </svg>
@@ -98,9 +98,10 @@
             </div>
         </main>
         <footer>
-            <img src="assets/graphics/logo.svg" height="30px" width="30px" alt="logo"><p style="padding-left: .5rem;">©24BWP</p>
+            <svg height="30px" width="30px" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"><circle cx="156.124" cy="156.124" r="156.124" style="fill:#fafad2" transform="scale(1.60129)"/><path d="M147.481 169.97c-10.656 26.208-18.144 51.552-18.144 69.12 0 25.632 15.264 37.152 44.352 37.44 26.784.288 57.6-9.792 85.248-42.048-7.2-5.472-13.824-12.384-29.664-28.224-11.808 16.128-23.616 28.224-37.728 28.224-6.624 0-9.792-3.168-9.792-10.08 0-9.504 4.32-25.056 17.28-54.72 33.984 0 65.088.288 75.168 1.152 3.456-13.824 8.928-28.512 13.536-42.048-10.08.864-38.592 1.152-70.56 1.152 4.896-10.368 10.944-21.888 16.992-34.848-18.72 3.456-36.576 4.608-54.72 4.608-4.608 9.504-9.792 19.872-14.688 30.24-24.192 0-43.776-.864-50.688-1.152-2.016 13.824-7.776 27.936-12.384 42.048 6.624-.288 24.192-.864 45.792-.864Z" style="fill:#222;fill-rule:nonzero" transform="matrix(1.34305 0 0 1.36708 -11.51 -4.022)"/>
+            </svg>
+            <p style="padding-left: .5rem">©25BWP</p>
         </footer>
-        <script src="js/scroll.js" defer></script>
-        <script src="js/linkstyling.js" defer></script>
+        <script>let items=document.querySelectorAll(".section"),page=document.querySelector(".page"),currentPos=0,isVertical=window.innerWidth<1024,isTouching=!1,startTouchPos=0,startPos=0,touchVelocity=0,lastTouchPos=0,isMobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<=1024;function init(){isVertical=window.innerWidth<1024,isMobile=/Mobi|Android/i.test(navigator.userAgent)||window.innerWidth<=1024;let e=Array.from(items).reduce(((e,t)=>e+(isVertical?t.offsetHeight:t.offsetWidth)),0);isMobile?(page.style.width="100%",page.style.height="100%",page.style.overflow="auto",page.style.transform="none",document.body.style.overflow="auto",page.style["-webkit-overflow-scrolling"]="touch"):(page.style.width=isVertical?"100%":`${e}px`,page.style.height=isVertical?`${e}px`:"100%",page.style.overflow="hidden",document.body.style.overflow="hidden",page.style["-webkit-overflow-scrolling"]="auto",updateScroll())}function updateScroll(){if(isMobile)return;let e=isVertical?page.scrollHeight-window.innerHeight:page.scrollWidth-window.innerWidth;currentPos=Math.max(0,Math.min(currentPos,e)),page.style.transform=isVertical?`translateY(${-currentPos}px)`:`translateX(${-currentPos}px)`}function handleScroll(e){isMobile||(currentPos+=isVertical?2*e.deltaY:2*(e.deltaY+e.deltaX),updateScroll(),e.preventDefault())}function handleTouchStart(e){isMobile||(isTouching=!0,startTouchPos=isVertical?e.touches[0].clientY:e.touches[0].clientX,startPos=currentPos,touchVelocity=0,lastTouchPos=startTouchPos)}function handleTouchMove(e){if(isMobile)return;if(!isTouching)return;let t=isVertical?e.touches[0].clientY:e.touches[0].clientX;currentPos=startPos+2*(startTouchPos-t),touchVelocity=2*(lastTouchPos-t),lastTouchPos=t,requestAnimationFrame(updateScroll),e.preventDefault()}function handleTouchEnd(){isMobile||(isTouching=!1)}function animate(){isMobile||(isTouching||(currentPos+=touchVelocity,touchVelocity*=.95,Math.abs(touchVelocity)<.1&&(touchVelocity=0),updateScroll()),requestAnimationFrame(animate))}function handleResize(){init()}function handleVisibilityChange(){document.hidden||(init(),requestAnimationFrame(animate))}function handleOrientationChange(){setTimeout((()=>{currentPos=0,init(),requestAnimationFrame(animate)}),500)}window.addEventListener("resize",handleResize),window.addEventListener("orientationchange",handleOrientationChange),document.addEventListener("wheel",handleScroll,{passive:!1}),document.addEventListener("touchstart",handleTouchStart,{passive:!1}),document.addEventListener("touchmove",handleTouchMove,{passive:!1}),document.addEventListener("touchend",handleTouchEnd,{passive:!1}),document.addEventListener("visibilitychange",handleVisibilityChange),window.onload=function(){init(),requestAnimationFrame(animate)};</script>
     </body>
 </html>
