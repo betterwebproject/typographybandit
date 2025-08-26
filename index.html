@@ -59,10 +59,10 @@
                             For responsive font sizing, consider using the CSS clamp() function. For example, on this site we use <em>clamp(1.1rem,3vw,1.25rem)</em>for our body font. The first value is the minimum font size (for mobile screens), the middle value is the target font size, and the final value is the maximum font size.
                         </li>
                         <li>
-                            Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra spacing. 
+                            Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra room. 
                         </li>
                         <li>
-                            Set your maximum line width to no more than 75 characters. That includes spaces. You can assign rem values to your text container to do this. The text on this site is set at <em>max-width: 40rem</em>, for example. Based on a root font size of 16px, we get a line width of around 640px. That works out to roughly 70 characters per line for desktops with our body text at 20px.
+                            Set your maximum line width to no more than 75 characters. That includes spaces. You can use ch units, i.e. <em>max-width: 60ch</em>, or you can assign rem values to your text container to do this. The text on this site is in a container set to <em>max-width: 40rem</em>, for example. Based on a root font size of 16px, we get a line width of around 640px. That works out to roughly 70 characters per line for desktops with our body text at 20px.
                         </li>
                         <li>
                             Choose background, foreground (text), and accent colors with high contrast for maximum accessibility. Use the WebAIM Contrast Checker (link below) to see if you're in the ballpark.
@@ -77,7 +77,7 @@
                             Use monospace fonts sparingly. They're harder on the eyes.
                         </li>
                         <li>
-                            Consider system fonts. Some of them are pretty good. See our link to Modern Font Stacks below.
+                            Consider system fonts for quicker page loads. Some of them are pretty good. See our link to Modern Font Stacks below.
                         </li>
                         <li>
                             Host your own fonts rather than linking to a CDN. They generally load faster this way and so help with FOIT (Flash of Invsible Text) and FOUT (Flash of Unstyled Text). Just remember to preload your fonts in the head.
