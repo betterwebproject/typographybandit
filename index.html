@@ -9,7 +9,7 @@
         <link rel="preload" as="font" href="assets/type/IBM_Plex_Sans.woff2" type="font/woff2" crossorigin>
         <link rel="preload" as="font" href="assets/type/IBM_Plex_Sans_Semi_Bold.woff2" type="font/woff2" crossorigin>
         <link rel="preload" as="font" href="assets/type/IBM_Plex_Mono.woff2" type="font/woff2" crossorigin>
-        <link rel="stylesheet" type="text/css" href="style.css?v=2">
+        <link rel="stylesheet" type="text/css" href="style.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="32x32">
         <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any" >
         <link rel="apple-touch-icon" href="assets/icons/apple_touch_icon.png">
@@ -35,9 +35,11 @@
                     <li>
                         <a href="/typographybandit/faq">FAQ</a>
                     </li>
+                    <li class="spacer" aria-hidden="true" ></li>
                     <li>
                         <a href="/typographybandit" class="active">Typography Bandit</a>
                     </li>
+                    <li class="spacer" aria-hidden="true" ></li>
                     <li>
                         <a href="/typographybandit/info">Info</a>
                     </li>
@@ -67,7 +69,7 @@
                             Make your body font size at least 17px for desktop screens and never under 16px for mobile screens. Setting your html to 16px and then assigning rem values to your headings and body text is one way to do this. (The body text on this site is set at 1.25rem, or 20px, for larger screens.)
                         </li>
                         <li>
-                            For responsive font sizing, consider using the CSS clamp() function. For example, on this site we use <em>clamp(1.1rem,3vw,1.25rem)</em>for our body font. The first value is the minimum font size (for mobile screens), the middle value is the target font size, and the final value is the maximum font size.
+                            For responsive font sizing, consider using the CSS clamp() function, i.e. <em>clamp(1.1rem,3vw,1.25rem)</em>for body font. The first value is the minimum font size (for mobile screens), the middle value is the target font size, and the final value is the maximum font size. Or, to cover both modern and legacy browsers, simply use the calc() function, i.e. <em>calc(1rem + .35vw)</em>.
                         </li>
                         <li>
                             Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra room. 
