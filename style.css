@@ -157,10 +157,6 @@ a {
     text-decoration: none
 }
 
-a:hover {
-        color: var(--highlight-color)
-}
-
 @media (hover:hover) and (pointer:fine) {
     a:hover {
         color: var(--highlight-color)
