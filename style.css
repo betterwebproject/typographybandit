@@ -240,7 +240,7 @@ hr {
 
 .arrow {
     width: auto;
-    height: calc(16px + .3vw);
+    height: calc(15px + .3vw);
     vertical-align: text-bottom;
 }
 
