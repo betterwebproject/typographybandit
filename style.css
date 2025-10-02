@@ -176,7 +176,7 @@ em {
 
 h1,
 h2 {
-    font-size: calc(1.6rem + .35vw);
+    font-size: calc(1.8rem + .35vw);
     font-weight: 500;
     line-height: 1.4;
     text-align: center;
