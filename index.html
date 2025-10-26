@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+        <meta name="color-scheme" content="light dark">
+        <!-- no back slashes for GitHub Pages! -->
+        <link rel="preload" href="assets/type/ibmplex_sans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/type/ibmplex_sans_semi-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/type/ibmplex_mono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.min.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+        <link rel="apple-touch-icon" href="assets/icons/apple_touch_icon.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="canonical" href="https://betterwebproject.github.io/typographybandit">
+        <title>Typography Bandit</title>
+        <meta name="description" content="Web typography best practices and resources for type criminals.">
+        <meta name="thumbnail" content="https://betterwebproject.github.io/typographybandit/assets/graphics/share.webp">
+        <meta property="og:site_name" content="Typography Bandit">
+        <meta property="og:title" content="Typography Bandit">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://betterwebproject.github.io/typographybandit">
+        <meta property="og:image" content="https://betterwebproject.github.io/typographybandit/assets/graphics/share.webp">
+        <meta property="og:image:type" content="image/webp">
+        <meta property="og:image:width" content="720">
+        <meta property="og:image:height" content="720">
+    </head>
+    <body>
+        <header>
+            <nav class="margins-off linkstyling-off liststyle-off">
+                <a href="#main-content" class="skip-link margins-off" aria-label="Skip to content">Skip<span class="space"></span><svg class="arrow" aria-hidden="true" viewBox="0 0 48 47.6"><path d="M30.3 46.7 26 42.6l7.4-7.4 4.3-3.6v-.2l-8.4.5H17.7q-3.6 0-6.8-1t-5.6-3a14 14 0 0 1-5.3-12Q0 12 1.4 9t3.9-5q2.4-2.1 5.6-3 3.2-1 6.8-1v5.8q-2.3 0-4.3.6-2.1.6-3.6 1.8-1.6 1.2-2.5 3.2-1 1.9-1 4.5 0 2.7 1 4.6a9 9 0 0 0 2.5 3.2q1.5 1.2 3.6 1.8 2 .6 4.3.6h11.7l8.3.5.1-.3-4.3-3.6-7.4-7.4 4.2-4L48 29z" fill="currentColor"/></svg></a>
+                <ul class="margins-off">
+                    <li>
+                        <a href="/typographybandit/faq">FAQ</a>
+                    </li>
+                    <li class="spacer" aria-hidden="true" ></li>
+                    <li>
+                        <a href="/typographybandit" class="active">Typography Bandit</a>
+                    </li>
+                    <li class="spacer" aria-hidden="true" ></li>
+                    <li>
+                        <a href="/typographybandit/info">Info</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content" class="margins-off" tabindex="-1"> 
+            <h1 class="vh">The Typography Bandit</h1>
+            <p class="vh">Web typography best practices and resources for type criminals.</p>
+            <section id="about" class="border">
+                <div class="section-inner">
+                    <h2>
+                        About
+                    </h2>
+                    <p>
+                        We are the Typography Bandit, design vigilantes protecting the internet from bad type choices. We are legion. Before you commit another type crime, please review the following free typo&shy;graphy best practices and resources so together we can make the web a safer place for type to live.
+                    </p>
+                </div>
+            </section>
+            <section id="best-practices" class="border big-gap">
+                <div class="section-inner">
+                    <h2>
+                        Best Practices
+                    </h2>
+                    <ul>
+                        <li>
+                            Make your body font size at least 17px for desktop screens and never under 16px for mobile screens. Setting your html to 16px and then assigning rem values to your headings and body text is one way to do this.
+                        </li>
+                        <li>
+                            For fluid font sizing without media queries, consider using the CSS clamp() function. A range like <em>clamp(1rem,3vw,1.25rem)</em> should work well for your body text. The first value is the minimum font size (for mobile screens), the middle value is the target font size, and the final value is the maximum font size. Or, to cover both modern and legacy browsers, simply use the calc() function, i.e. <em>calc(1rem + .35vw)</em>.
+                        </li>
+                        <li>
+                            Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra room. 
+                        </li>
+                        <li>
+                            Set your maximum line width to no more than 75 characters. That includes spaces. The best way to do this is to assign ch unit values to your text containers, i.e. <em>max-width: 60ch</em>.
+                        <li>
+                            Choose background, foreground (text), and accent colors with high contrast for maximum accessibility. Use the WebAIM Contrast Checker (link below) to see if you're in the ballpark.
+                        </li>
+                        <li>
+                            Never justify text, and try to avoid centering body text.
+                        </li>
+                        <li>
+                            Use no more than three, and preferrably two, typefaces on one website. It's not just a question of aesthetics. Loading all those font files will slow down your website and generate more CO<sup>2</sup>.
+                        </li>
+                        <li>
+                            Use monospace fonts sparingly. They're harder on the eyes.
+                        </li>
+                        <li>
+                            Consider system fonts for quicker page loads. Some of them are pretty good. See our link to Modern Font Stacks below.
+                        </li>
+                        <li>
+                            Host your own fonts rather than linking to a CDN. They generally load faster this way and so help with FOIT (Flash of Invsible Text) and FOUT (Flash of Unstyled Text). Just remember to preload your fonts in the head.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="resources" class="border liststyle-off small-gap">
+                <div class="section-inner" style="text-align: center">
+                    <h2>
+                        Resources
+                    </h2>
+                    <div class="big-gap">
+                        <h3>TYPEFACES</h3>
+                        <ul>
+                            <li>
+                                <a href="https://modernfontstacks.com/">Modern Font Stacks</a>
+                            </li>
+                            <li>
+                                <a href="https://www.typewolf.com/">Typewolf</a>
+                            </li>
+                            <li>
+                                <a href="https://fontsinuse.com/ ">Fonts in use</a>
+                            </li>
+                            <li>
+                                <a href="https://www.futurefonts.xyz/">Future Fonts</a>
+                            </li>
+                        </ul>
+                        <h3>Video</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=_lfE3Q4kiSE/">Erik Spiekermann: Typomania</a>
+                            </li>
+                            <li>
+                                <a href="https://www.hustwit.com/helvetica/">Helvetica by Gary Huswit</a>
+                            </li>
+                        </ul>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>
+                                <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>
+                            </li>
+                            <li>
+                                <a href="https://nekocalc.com/px-to-rem-converter/">NicoCalc PX to REM Converter</a>
+                            </li>
+                            <li>
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/fonts-ninja/">Fonts Ninja (for Firefox)</a>
+                            </li>
+                            <li>
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/better-ruler/">Better Ruler (for Firefox)</a>
+                            </li>
+                            <li>
+                                <a href="https://wordcounter.net/">Word Counter</a>
+                            </li>
+                            <li>
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/">ColorZilla (for Firefox)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a>
+                            </li>
+                            <li>
+                                <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>
+                            </li>
+                        </ul>
+                            <h3>Reference</h3>
+                        <ul>
+                            <li>
+                                <a href="https://motherfuckingwebsite.com/">Motherfucking Website</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+		</main>
+        <footer class="margins-off">
+            <svg viewBox="0 0 500 500" width="30" height="30" role="img"><title>Typography Bandit logo</title><circle cx="156.12" cy="156.12" r="156.12" transform="scale(1.60129)" fill="var(--primary)"/><path d="M186.56 228.34c-14.3 35.83-24.36 70.48-24.36 94.5 0 35.03 20.5 50.78 59.56 51.18 35.98.39 77.36-13.39 114.5-57.49-9.67-7.48-18.57-16.93-39.84-38.58-15.86 22.05-31.72 38.58-50.68 38.58-8.9 0-13.15-4.33-13.15-13.78 0-12.99 5.8-34.25 23.21-74.8 45.64 0 87.42.4 100.96 1.57 4.64-18.9 11.99-38.98 18.18-57.48-13.54 1.18-51.84 1.57-94.77 1.57 6.58-14.17 14.7-29.92 22.82-47.64-25.14 4.73-49.12 6.3-73.5 6.3-6.18 13-13.14 27.17-19.72 41.34-32.49 0-58.8-1.18-68.07-1.57-2.71 18.9-10.45 38.19-16.64 57.48 8.9-.4 32.5-1.18 61.5-1.18" fill="var(--background)"/></svg><span class="big-space"></span><p>©25BWP</p>
+        </footer>
+	</body>
+</html>
