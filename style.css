@@ -33,7 +33,7 @@
     --highlight: #AD0000;
     --accent: #9A9A9A;
     --background: #FFFAF0;
-    --code-background: #EAEAEA;
+    --em-background: #F7F7F7;
 }
 
 @media(prefers-color-scheme:dark) {
