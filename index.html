@@ -77,16 +77,16 @@
                     </h2>
                     <ul>
                         <li>
-                            Make your body font size at least 17px for desktop screens and never under 16px for mobile screens. Setting your html to 16px and then assigning rem values to your headings and body text is one way to do this.
+                            Make your body font size at least <em>17px</em> for desktop screens and never under <em>16px</em> for mobile screens. Setting <em>html: {font-size: 16px;}</em> and then assigning <em>rem</em> values to your headings and body text is one way to do this.
                         </li>
                         <li>
-                            For fluid font sizing without media queries, consider using the CSS clamp() function. A range like <em>clamp(1rem,3vw,1.25rem)</em> should work well for your body text. The first value is the minimum font size (for mobile screens), the middle value is the target font size, and the final value is the maximum font size. Or, to cover both modern and legacy browsers, simply use the calc() function, i.e. <em>calc(1rem + .35vw)</em>.
+                            For fluid font sizing without media queries, consider using the CSS <em>clamp() </em> function. A range like <em>clamp(1rem, 3vw, 1.25rem)</em> should work well for your body text. The first value is the minimum <em>font-size</em> (for mobile screens), the middle value is the target size, and the final value is the maximum size. Or, to cover both modern and legacy browsers, simply use the <em>calc()</em> function, i.e. <em>calc(1rem + .35vw)</em>.
                         </li>
                         <li>
                             Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra room. 
                         </li>
                         <li>
-                            Set your maximum line width to no more than 75 characters. That includes spaces. The best way to do this is to assign ch unit values to your text containers, i.e. <em>max-width: 60ch</em>.
+                            Set your maximum line width to no more than 75 characters. That includes spaces. The best way to do this is to assign <em>ch</em> unit values to your text containers, i.e. <em>.text p {max-width: 60ch;}</em>.
                         <li>
                             Choose background, foreground (text), and accent colors with high contrast for maximum accessibility. Use the WebAIM Contrast Checker (link below) to see if you're in the ballpark.
                         </li>
