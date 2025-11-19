@@ -24,8 +24,8 @@
 
 :root {
     --small-gap: 1rem;
-    --gap: 1.25rem;
-    --big-gap: 1.5rem;
+    --gap: 1.5rem;
+    --big-gap: 2rem;
     --font: 'IBM Plex Sans', system-ui;
     --paragraph: calc(1rem + .5vw);
     --primary: #161718;
@@ -181,7 +181,7 @@ em {
 
 h1,
 h2 {
-    font-size: calc(1.8rem + .35vw);
+    font-size: calc(var(--paragraph) * 1.5);
     font-weight: 500;
     line-height: 1.4;
     text-align: center;
@@ -202,11 +202,11 @@ ul {
     list-style-position: inside;
 }
 
-.big-gap li+li {
+.big-gap li + li {
     margin-block-start: var(--big-gap);
 }
 
-.small-gap li+li {
+.small-gap li + li {
     margin-block-start: var(--small-gap);
 }
 

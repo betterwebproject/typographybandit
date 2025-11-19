@@ -77,13 +77,13 @@
                     </h2>
                     <ul>
                         <li>
-                            Make your body font size at least <em>17px</em> for desktop screens and never under <em>16px</em> for mobile screens. Setting <em>html: {font-size: 16px;}</em> and then assigning <em>rem</em> values to your headings and body text is one way to do this.
+                            Make your body text readable, i.e. at least <em>19px</em> for desktop screens and never under <em>16px</em> for mobile screens. Setting <em>html: {font-size: 16px;}</em> and then assigning <em>rem</em> values to your headings and body text is one way to do this.
                         </li>
                         <li>
-                            For fluid font sizing without media queries, consider using the CSS <em>clamp() </em> function. A range like <em>clamp(1rem, 3vw, 1.25rem)</em> should work well for your body text. The first value is the minimum <em>font-size</em> (for mobile screens), the middle value is the target size, and the final value is the maximum size. Or, to cover both modern and legacy browsers, simply use the <em>calc()</em> function, i.e. <em>calc(1rem + .35vw)</em>.
+                            For fluid font sizing without media queries, consider using the CSS <em>clamp() </em> function. A range like <em>clamp(1rem, 1rem + .5vw, 1.7rem);</em> should work well for your body text. The first value is the minimum <em>font-size</em> (for mobile screens), the middle value is the target size, and the final value is the maximum size. Or, to cover both modern and legacy browsers, simply use the <em>calc()</em> function, i.e. <em>calc(1rem + .5vw)</em>.
                         </li>
                         <li>
-                            Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra room. 
+                            Leave body text letter spacing alone, i.e. <em>letter-spacing: 0px</em>. Subheadings in all caps may require a little extra breathing room. 
                         </li>
                         <li>
                             Set your maximum line width to no more than 75 characters. That includes spaces. The best way to do this is to assign <em>ch</em> unit values to your text containers, i.e. <em>.text p {max-width: 60ch;}</em>.
@@ -97,7 +97,7 @@
                             Use no more than three, and preferrably two, typefaces on one website. It's not just a question of aesthetics. Loading all those font files will slow down your website and generate more CO<sup>2</sup>.
                         </li>
                         <li>
-                            Use monospace fonts sparingly. They're harder on the eyes.
+                            Use monospaced fonts sparingly. They're harder on the eyes.
                         </li>
                         <li>
                             Consider system fonts for quicker page loads. Some of them are pretty good. See our link to Modern Font Stacks below.
