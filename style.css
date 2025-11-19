@@ -23,9 +23,8 @@
 }
 
 :root {
-    --small-gap: 1rem;
-    --gap: 1.5rem;
-    --big-gap: 2rem;
+    --gap: 1.25rem;
+    --big-gap: 2.5rem;
     --font: 'IBM Plex Sans', system-ui;
     --paragraph: calc(1rem + .5vw);
     --primary: #161718;
@@ -61,9 +60,14 @@ main * + * {
 }
 
 h1 + p,
-h2 + ul li,
-h2 + h3 {
+h2 + p,
+h2 + ul,
+h2 + h3  {
     margin-block-start: var(--big-gap);
+}
+
+ul + h3 {
+    margin-block-start: 3.5rem;
 }
 
 .margins-off > * {
@@ -206,10 +210,6 @@ ul {
 
 .big-gap li + li {
     margin-block-start: var(--big-gap);
-}
-
-.small-gap li + li {
-    margin-block-start: var(--small-gap);
 }
 
 .liststyle-off ul {
