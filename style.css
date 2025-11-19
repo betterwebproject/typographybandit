@@ -63,7 +63,7 @@ main * + * {
 h1 + p,
 h2 + ul li,
 h2 + h3 {
-    margin-block-start: calc(var(--gap) + 1rem);
+    margin-block-start: var(--big-gap);
 }
 
 .margins-off > * {
