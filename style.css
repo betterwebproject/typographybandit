@@ -24,7 +24,7 @@
 
 :root {
     --gap: 1.25rem;
-    --big-gap: 2.5rem;
+    --big-gap: 2.25rem;
     --font: 'IBM Plex Sans', system-ui;
     --paragraph: calc(1rem + .5vw);
     --primary: #161718;
