@@ -43,7 +43,7 @@
         --primary: #D3CEC1;
         --highlight: #FFA8A8;
         --accent: #8D8C8C;
-        --code-background: #313131;
+        --em-background: #313131;
     }
 }
 
@@ -176,7 +176,7 @@ em {
     padding: 0 .15rem;
     border-radius: .25rem;
     color: var(--highlight);
-    background-color: var(--code-background);
+    background-color: var(--em-background);
 }
 
 h1,
