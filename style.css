@@ -33,7 +33,7 @@
     --highlight: #AD0000;
     --accent: #9A9A9A;
     --background: #FFFAF0;
-    --code-background: #eaeaea;
+    --code-background: #EAEAEA;
 }
 
 @media(prefers-color-scheme:dark) {
@@ -41,8 +41,9 @@
         --background: #161718;
         --dark-primary: var(--background);
         --primary: #D3CEC1;
-        --highlight: #FF7A7A;
-        --accent: #8D8C8C
+        --highlight: #FFA8A8;
+        --accent: #8D8C8C;
+        --code-background: #313131;
     }
 }
 
@@ -159,7 +160,7 @@ a {
 
 @media (hover:hover) and (pointer:fine) {
     a:hover {
-        color: var(--highlight);
+        text-decoration-color: var(--highlight);
     }
 }
 
