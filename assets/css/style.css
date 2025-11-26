@@ -253,8 +253,8 @@ hr {
 }
 
 .arrow {
-    width: auto;
-    height: calc(15px + .3vw);
+    width: .9em;
+    height: auto;
     vertical-align: text-bottom;
 }
 
