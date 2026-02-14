@@ -196,6 +196,11 @@ a {
     text-decoration-color: var(--accent);
 }
 
+a:focus-visible {
+    outline: 2px dotted var(--primary);
+    outline-offset: 2px;
+}
+
 .linkstyling-off a {
     text-decoration: none;
 }
@@ -206,9 +211,8 @@ a {
     }
 }
 
-a:focus-visible {
-    outline: 2px dotted var(--primary);
-    outline-offset: 2px;
+[tabindex="-1"]:focus {
+    outline: none;
 }
 
 .center {
